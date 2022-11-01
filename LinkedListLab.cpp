@@ -74,8 +74,9 @@ void main(){
     prepend(dinner, "Turnips"); //❓ Lab Question 7
     printList(dinner);
 
-    //❓ Lab Question 6
-    // YOUR CODE TO REMOVE TURNIPS HERE:
+    //❓ Lab Question 6;
+    dinner = dinner->next;
+    
     printList(dinner);
 
     //❓ Lab Question 10
