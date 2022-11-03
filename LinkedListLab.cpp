@@ -39,15 +39,25 @@ void prepend(List* &list, string val){
 //This function removes the first item from the list
 void removeFirst(List* &list){
     //❓ Lab Question 9
-    //YOUR CODE HERE
+     List* turnip = list;
+    list = list->next;
+    delete turnip;
 }
 
 //This function returns true if the list haystck
 //contains the value needle, and false otherwise.
 bool contains(List* haystack, string needle){
     //❓ Lab Question 10
-    //YOUR CODE HERE
-    return false;
+    while ( haystack != NULL ){
+            cout << haystack->value << endl;
+            haystack = haystack->next;
+        }
+    if (haystack -> value == needle);
+        return true;
+    
+    if (haystack -> value < needle);
+        return false;
+        
 }
 
 void insertAt(List* &list, int pos, string value){
